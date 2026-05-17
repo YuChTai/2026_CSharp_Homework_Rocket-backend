@@ -1,0 +1,74 @@
+﻿優先級：高在上，低在下，依序由上往下排列。
+用法：即 operator 裡，所呈現方式。
+---
+1.
+Operator：x.y、f(x)、a[i]、x?.y、x?[y]、x++、x--、x!、new、typeof、checked、unchecked、default、nameof、delegate、sizeof、stackalloc、x->y
+Category or Name：主要
+
+2.
+Operator：+x、-x、!x、~x、++x、--x、^x、(T)x、await、&x、*x、true and false
+Category or Name：單一運算
+
+3.
+Operator：x..y
+Category or Name：範圍
+
+4.
+Operator：switch、with
+Category or Name：switch 和 with 表達式
+
+5.
+Operator：x * y、x / y、x % y
+Category or Name：乘法
+
+6.
+Operator：x + y、x – y
+Category or Name：添加劑
+
+7.
+Operator：x << y、x >> y、x >>> y
+Category or Name：轉變
+
+8.
+Operator：x < y、x > y、x <= y、x >= y、is、as
+Category or Name：關係型和類型測試
+
+9.
+Operator：x == y、x != y
+Category or Name：平等
+
+10.
+Operator：x & y
+Category or Name：布爾邏輯 AND 或 位邏輯 AND
+
+11.
+Operator：x ^ y
+Category or Name：布爾邏輯 XOR 或 位邏輯 XOR
+
+12.
+Operator：x | y
+Category or Name：布爾邏輯 OR 或 位邏輯 OR
+
+13.
+Operator：x && y
+Category or Name：條件式 AND
+
+14.
+Operator：x || y
+Category or Name：條件式 OR
+
+15.
+Operator：x ?? y
+Category or Name：Null 聯合運算符	
+
+16.
+Operator：c ? t : f
+Category or Name：條件運算元
+
+17.
+Operator：x = y、x += y、x -= y、x *= y、x /= y、x %= y、x &= y、x \|= y、x ^= y、x <<= y、x >>= y、x 
+Category or Name：指派和 Lambda 宣告
+
+18.
+Operator：>>>= y、x ??= y、=>
+Category or Name：

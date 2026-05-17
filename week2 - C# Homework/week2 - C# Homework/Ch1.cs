@@ -7,21 +7,21 @@ namespace week2_CSharp_Homework {
         static void Main(string[] args) {
 
             // 1-1：寫一程式，輸入a,b,c,d，計算((𝑎+𝑏))/((𝑐−𝑑))×2。            
-            //int a, b, c, d;
-            //Console.WriteLine("此程式可計算 ((a+b)/(c-d))*2");
-            //Console.Write("請輸入 a 值：");
-            //a = Convert.ToInt32(Console.ReadLine());
-            //Console.Write("請輸入 b 值：");
-            //b = Convert.ToInt32(Console.ReadLine());
-            //Console.Write("請輸入 c 值：");
-            //c = Convert.ToInt32(Console.ReadLine());
-            //Console.Write("請輸入 d 值：");
-            //d = Convert.ToInt32(Console.ReadLine());
-            //if (c - d == 0) {
-            //    Console.WriteLine("除數為「0」，故本次計算，無意義。");
-            //} else {
-            //    Console.WriteLine("答案： {0}", ((a + b) / (c - d)) * 2);
-            //}
+            int a, b, c, d;
+            Console.WriteLine("此程式可計算 ((a+b)/(c-d))*2");
+            Console.Write("請輸入 a 值：");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("請輸入 b 值：");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("請輸入 c 值：");
+            c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("請輸入 d 值：");
+            d = Convert.ToInt32(Console.ReadLine());
+            if (c - d == 0) {
+                Console.WriteLine("除數為「0」，故本次計算，無意義。");
+            } else {
+                Console.WriteLine("答案： {0}", ((a + b) / (c - d)) * 2);
+            }
 
             // 1-2：寫一程式，輸入一組二元一次方程式之係數，輸出方程式的解。
             //int a1, b1, c1;
