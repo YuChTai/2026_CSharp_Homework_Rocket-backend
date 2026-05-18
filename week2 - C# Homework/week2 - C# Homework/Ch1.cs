@@ -1,27 +1,25 @@
 ﻿using System;
-using System.Net;
-using System.Runtime.InteropServices;
 
 namespace week2_CSharp_Homework {
     internal class Ch1 {
         static void Main(string[] args) {
 
             // 1-1：寫一程式，輸入a,b,c,d，計算((𝑎+𝑏))/((𝑐−𝑑))×2。            
-            int a, b, c, d;
-            Console.WriteLine("此程式可計算 ((a+b)/(c-d))*2");
-            Console.Write("請輸入 a 值：");
-            a = Convert.ToInt32(Console.ReadLine());
-            Console.Write("請輸入 b 值：");
-            b = Convert.ToInt32(Console.ReadLine());
-            Console.Write("請輸入 c 值：");
-            c = Convert.ToInt32(Console.ReadLine());
-            Console.Write("請輸入 d 值：");
-            d = Convert.ToInt32(Console.ReadLine());
-            if (c - d == 0) {
-                Console.WriteLine("除數為「0」，故本次計算，無意義。");
-            } else {
-                Console.WriteLine("答案： {0}", ((a + b) / (c - d)) * 2);
-            }
+            //int a, b, c, d;
+            //Console.WriteLine("此程式可計算 ((a+b)/(c-d))*2");
+            //Console.Write("請輸入 a 值：");
+            //a = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("請輸入 b 值：");
+            //b = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("請輸入 c 值：");
+            //c = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("請輸入 d 值：");
+            //d = Convert.ToInt32(Console.ReadLine());
+            //if (c - d == 0) {
+            //    Console.WriteLine("除數為「0」，故本次計算，無意義。");
+            //} else {
+            //    Console.WriteLine("答案： {0}", ((a + b) / (c - d)) * 2);
+            //}
 
             // 1-2：寫一程式，輸入一組二元一次方程式之係數，輸出方程式的解。
             //int a1, b1, c1;
@@ -105,13 +103,47 @@ namespace week2_CSharp_Homework {
 
             // 1-8：請輸入身高體重，輸出BMI
             // 公式：BMI＝體重(公斤) ÷ 身高 (公尺) ÷ 身高 (公尺)
-            //int weight, height;
+            //int weight;
+            //float height;
             //Console.WriteLine("此程式可計算 BMI");
             //Console.Write("請輸入體重（單位：公斤）：");
             //weight = Convert.ToInt32(Console.ReadLine());
             //Console.Write("請輸入身高（單位：公尺）：");
-            //height = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("結果：BMI = {0}", (weight/Math.Pow(height, 2)));
+            //height = Convert.ToSingle(Console.ReadLine());
+            //Console.WriteLine("結果：BMI = {0}", (weight / Math.Pow(height, 2)));
+
+            // 2-1
+            //Ch2.Homework2_1();
+
+            // 2-2
+            //Ch2.Homework2_2();
+
+            // 2-3
+            //Ch2.Homework2_3();
+
+            // 2-4
+            //Ch2.Homework2_4();
+
+            // 2-5
+            //Ch2.Homework2_5();
+
+            // 2-6
+            //Ch2.Homework2_6();
+
+            // 2-7
+            //Ch2.Homework2_7();
+
+            // 2_additional1
+            //Ch2.Homework2_additional1();
+
+            // 2_additional2
+            //Ch2.Homework2_additional2();
+
+            // 2_additional3
+            //Ch2.Homework2_additional3();
+
+            // 2_additional4
+            //Ch2.Homework2_additional4();
         }
     }
 }
