@@ -1,0 +1,29 @@
+﻿目標型別：int
+	方法一：
+		int.TryParse(str, out int r)
+	方法二：
+		int.Parse(str)、Convert.ToInt32(str)
+
+目標型別：double
+	方法一：
+		double.TryParse(str, out double r)
+	方法二：
+		double.Parse(str)、Convert.ToDouble(str)
+	
+目標型別：bool
+	方法一：
+		bool.TryParse(str, out bool r)
+	方法二：
+		dbool.Parse(str) 、Convert.ToBoolean(str)
+
+目標型別：DateTime
+	方法一：
+		DateTime.TryParse(str, out DateTime r)
+	方法二：
+		DateTime.Parse(str) 、Convert.ToDateTime(str) 
+
+目標型別：Enum
+	方法一：
+		Enum.TryParse<MyEnum>(str, out var r) 
+	方法二：
+		(MyEnum)Enum.Parse(typeof(MyEnum), str)

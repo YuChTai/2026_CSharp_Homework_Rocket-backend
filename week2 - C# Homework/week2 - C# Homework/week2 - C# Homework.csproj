@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Ch1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="整理 4 - 作業：運算符的用法與運算的優先級.txt" />
+    <Content Include="整理 3-2 - 作業：型別之間如何轉換？（any type to string）.txt" />
+    <Content Include="整理 3-1 - 作業：型別之間如何轉換？（string to something type）.txt" />
+    <Content Include="整理 2 - 作業：變數宣告的方法.txt" />
+    <Content Include="整理 1 - 作業：變數型態整理.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

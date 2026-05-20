@@ -1,0 +1,3 @@
+﻿內建的「值」類型：bool、byte、sbyte、char、decimal、double、float、int、uint
+
+內建的「參考」類型：object、string、delegate、dynamic

@@ -1,0 +1,5 @@
+﻿目標型別：string
+	方法一：
+		ToString() 
+	方法二：
+		Convert.ToString(obj)
