@@ -118,7 +118,7 @@ int[] arrNum;
 //    } else {
 //        arrNumB[i] = 0;
 //    }
-    
+
 //}
 //int countNum = 0;
 //Console.WriteLine();
@@ -138,59 +138,227 @@ int[] arrNum;
 /* 
  * 習題 5-4：寫一程式，將 15 個數字，存入 3 x 5 的二維陣列 A 中，求每一行及每一列數字的和。
  */
-int column = 5;
-int row = 3;
-int[,] arrNum2D = new int[row, column];
-Console.WriteLine("此程式，可對某二維陣列的列和行，分別計算其同列之總和及同行之總和。");
-Console.WriteLine("此二維陣列，可儲存 15 個整數值。");
+//int column = 5;
+//int row = 3;
+//int[,] arrNum2D = new int[row, column];
+//Console.WriteLine("此程式，可對某二維陣列的列和行，分別計算其同列之總和及同行之總和。");
+//Console.WriteLine("此二維陣列，可儲存 15 個整數值。");
+//Console.WriteLine("-----");
+//Console.WriteLine("請輸入 15 個整數");
+//Console.WriteLine("-----");
+//int N = 15;
+//int rowloop = 0;
+//int columnloop = 0;
+//while (N > 0) {
+//    Console.WriteLine($"當前是第 {rowloop + 1} 列，第 {columnloop + 1} 行。");
+//    int num;
+//    Console.Write($"第 {15 - (N - 1)} 個數：");
+//    userInput = Console.ReadLine();
+//    _ = int.TryParse(userInput, out num);
+//    if (((columnloop + 1) % column) == 0) {
+//        arrNum2D[rowloop, columnloop] = num;
+//        rowloop++;
+//        columnloop = 0;
+//        N--;
+//        continue;
+//    }
+//    arrNum2D[rowloop, columnloop] = num;
+//    columnloop++;
+//    N--;
+//}
+//Console.WriteLine();
+//int sumRow = 0;
+//int sumRowPre = 0;
+//for (int i = 0; i < row; i++) {
+//    sumRowPre = sumRow;
+//    for (int j = 0; j < column; j++) {
+//        sumRow += arrNum2D[i, j];        
+//    }
+//    sumRow -= sumRowPre;
+//    Console.WriteLine($"第 {i + 1} 列的總和為：{sumRow}");   
+//}
+//int sumColumn = 0;
+//int sumColumnPre = 0;
+//columnloop = 0;
+//while (columnloop < 5) {
+//    sumColumnPre = sumColumn;
+//    for (int i = 0; i < row; i++) {
+//        sumColumn += arrNum2D[i, columnloop];
+//    }
+//    sumColumn -= sumColumnPre;
+//    Console.WriteLine($"第 {columnloop} 行的總和為：{sumColumn}");
+//    columnloop++;
+//}
+//Console.WriteLine();
+
+/* 
+ * 習題 5-5：寫一程式，將 15 個數字，存入 3 x 5 的二維陣列 A 中，求每一行及每一列數字的最小值。
+ */
+//int column = 5;
+//int row = 3;
+//int[,] arrNum2D = new int[row, column];
+//Console.WriteLine("此程式，可求某二維陣列的列和行之最小值。");
+//Console.WriteLine("此二維陣列，可儲存 15 個整數值。");
+//Console.WriteLine("-----");
+//Console.WriteLine("請輸入 15 個整數");
+//Console.WriteLine("-----");
+//int N = 15;
+//int rowloop = 0;
+//int columnloop = 0;
+//while (N > 0) {
+//    Console.WriteLine($"當前是第 {rowloop + 1} 列，第 {columnloop + 1} 行。");
+//    int num;
+//    Console.Write($"第 {15 - (N - 1)} 個數：");
+//    userInput = Console.ReadLine();
+//    _ = int.TryParse(userInput, out num);
+//    if (((columnloop + 1) % column) == 0) {
+//        arrNum2D[rowloop, columnloop] = num;
+//        rowloop++;
+//        columnloop = 0;
+//        N--;
+//        continue;
+//    }
+//    arrNum2D[rowloop, columnloop] = num;
+//    columnloop++;
+//    N--;
+//}
+//Console.WriteLine();
+//int minRow = 0;
+//for (int i = 0; i < row; i++) {    
+//    for (int j = 0; j < column; j++) {
+//        if (j == 0) {
+//            minRow = arrNum2D[i, j];
+//        }        
+//        if(arrNum2D[i, j] < minRow) {
+//            minRow = arrNum2D[i, j];
+//        }
+//    }
+//    Console.WriteLine($"第 {i + 1} 列的最小值為：{minRow}");
+//}
+//int minColumn = 0;
+//columnloop = 0;
+//while (columnloop < 5) {
+//    for (int i = 0; i < row; i++) {
+//        if (i == 0) {
+//            minColumn = arrNum2D[i, columnloop];
+//        }
+//        if (arrNum2D[i, columnloop] < minRow) {
+//            minRow = arrNum2D[i, columnloop];
+//        }
+//    }
+//    Console.WriteLine($"第 {columnloop} 行的最小值為：{minColumn}");
+//    columnloop++;
+//}
+//Console.WriteLine();
+
+/* 
+ * 習題 5-6：寫一程式，輸入兩組數字：a1, a2, ..., a5 和 b1, b2, ..., b5。求 ai + bi, i = 1 到 i = 5。
+ */
+//Console.WriteLine("此程式，可將兩組陣列，相同索引之元素值相加，而後得解。");
+//Console.WriteLine("兩組陣列，各自可儲存 5 個整數值。");
+//Console.WriteLine("-----");
+//Console.WriteLine("請輸入 5 個整數");
+//Console.WriteLine("-----");
+//int N = 5;
+//int count = 0;
+//int NA = N;
+//int[] arrNumA = new int[NA];
+//int countA = count;
+//while (NA > 0) {
+//    int num;
+//    Console.Write($"第 {countA + 1} 個數：");
+//    userInput = Console.ReadLine();
+//    _ = int.TryParse(userInput, out num);
+//    arrNumA[countA] = num;
+//    countA++;
+//    NA--;
+//}
+//int NB = N;
+//int[] arrNumB = new int[NB];
+//int countB = count;
+//while (NB > 0) {
+//    int num;
+//    Console.Write($"第 {countB + 1} 個數：");
+//    userInput = Console.ReadLine();
+//    _ = int.TryParse(userInput, out num);
+//    arrNumB[countB] = num;
+//    countB++;
+//    NB--;
+//}
+//for (int i = 0; i < N; i++) {    
+//    Console.WriteLine("兩陣列之索引 {0} 的和：{1}", i, (arrNumA[i] + arrNumB[i]));
+//}
+//Console.WriteLine();
+
+/* 
+ * 習題 5-7：寫一程式，輸入兩組數字：a1, a2, ..., a5 和 b1, b2, ..., b5。令 x 為 a 中的最大值，令 y 為 b 中的最大值，求 x 與 y 中，較小者。
+ */
+Console.WriteLine("此程式，可得兩組陣列中，各自最大的元素值，並且相比較，而後求得二者之中的較小者。");
+Console.WriteLine("兩組陣列，各自可儲存 5 個整數值。");
 Console.WriteLine("-----");
-Console.WriteLine("請輸入 15 個整數");
+Console.WriteLine("請輸入 5 個整數");
 Console.WriteLine("-----");
-int N = 15;
-int rowloop = 0;
-int columnloop = 0;
-while (N > 0) {
-    Console.WriteLine($"當前是第 {rowloop + 1} 列，第 {columnloop + 1} 行。");
+Console.WriteLine();
+Console.WriteLine();
+int N = 5;
+int count = 0;
+int NA = N;
+int[] arrNumA = new int[NA];
+int countA = count;
+Console.WriteLine("陣列 A");
+Console.WriteLine("-----");
+while (NA > 0) {
     int num;
-    Console.Write($"第 {15 - (N - 1)} 個數：");
+    Console.Write($"第 {countA + 1} 個數：");
     userInput = Console.ReadLine();
     _ = int.TryParse(userInput, out num);
-    if (((columnloop + 1) % column) == 0) {
-        arrNum2D[rowloop, columnloop] = num;
-        rowloop++;
-        columnloop = 0;
-        N--;
-        continue;
-    }
-    arrNum2D[rowloop, columnloop] = num;
-    columnloop++;
-    N--;
+    arrNumA[countA] = num;
+    countA++;
+    NA--;
 }
 Console.WriteLine();
-int sumRow = 0;
-int sumRowPre = 0;
-for (int i = 0; i < row; i++) {
-    sumRowPre = sumRow;
-    for (int j = 0; j < column; j++) {
-        sumRow += arrNum2D[i, j];        
-    }
-    sumRow -= sumRowPre;
-    Console.WriteLine($"第 {i + 1} 列的總和為：{sumRow}");   
+Console.WriteLine();
+int NB = N;
+int[] arrNumB = new int[NB];
+int countB = count;
+Console.WriteLine("陣列 B");
+Console.WriteLine("-----");
+while (NB > 0) {
+    int num;
+    Console.Write($"第 {countB + 1} 個數：");
+    userInput = Console.ReadLine();
+    _ = int.TryParse(userInput, out num);
+    arrNumB[countB] = num;
+    countB++;
+    NB--;
 }
-int sumColumn = 0;
-int sumColumnPre = 0;
-columnloop = 0;
-while (columnloop < 5) {
-    sumColumnPre = sumColumn;
-    for (int i = 0; i < row; i++) {
-        sumColumn += arrNum2D[i, columnloop];
+int maxNumA = 0;
+for (int i = 0; i < arrNumA.Length; i++) {
+        if (i == 0) {
+        maxNumA = arrNumA[i];
+        }
+        if (arrNumA[i] > maxNumA) {
+        maxNumA = arrNumA[i];
+        }
+}
+int maxNumB = 0;
+for (int i = 0; i < arrNumB.Length; i++) {
+    if (i == 0) {
+        maxNumB = arrNumB[i];
     }
-    sumColumn -= sumColumnPre;
-    Console.WriteLine($"第 {columnloop} 行的總和為：{sumColumn}");
-    columnloop++;
+    if (arrNumB[i] > maxNumB) {
+        maxNumB = arrNumB[i];
+    }
 }
 Console.WriteLine();
-
-
-
-
+if (maxNumA == maxNumB) {
+    int maxNum = maxNumA = maxNumB;
+    Console.WriteLine("兩陣列的最大值，一樣大。值為：{0}", maxNum);
+    return;
+}
+if(maxNumA < maxNumB) {
+    Console.WriteLine("兩陣列的最大值相比較後，A 陣列的較小，值為：{0}", maxNumA);
+} else {
+    Console.WriteLine("兩陣列的最大值相比較後，B 陣列的較小，值為：{0}", maxNumB);
+}
+Console.WriteLine();
