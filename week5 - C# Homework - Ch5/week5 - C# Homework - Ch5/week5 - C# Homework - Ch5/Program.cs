@@ -1,20 +1,21 @@
-﻿using System.Runtime.InteropServices;
-
-string? userInput;
+﻿string? userInput;
 int[] arrNum;
 /* 
  * 習題 5-1：寫一程式，將 10 個數字，讀入 A 陣列，然後逐一檢查此陣列。如 A[i] > 5，則令 A[i] = A[i] - 5，否則 A[i] = A[i] + 5。
  */
+//Console.WriteLine("此程式，可逐一檢查某一陣列裡的元素值，並觀其值是否大於 5。若是則 -5，否則 + 5。");
 //Console.WriteLine("請輸入 10 個整數");
 //Console.WriteLine("-----");
+//Console.WriteLine();
+//Console.WriteLine();
 //int N = 10;
 //arrNum = new int[N];
 //int count = 0;
-//while(N > 0) {
+//while (N > 0) {
 //    int num;
 //    Console.Write($"第 {count + 1} 個數：");
 //    userInput = Console.ReadLine();
-//    _ = int.TryParse(userInput, out num);    
+//    _ = int.TryParse(userInput, out num);
 //    arrNum[count] = num;
 //    count++;
 //    N--;
@@ -43,11 +44,11 @@ int[] arrNum;
 //        Console.Write("A[i] < 5 的有：");
 //        firstLoop = true;
 //    }
-//    if(countNum == 1) {
+//    if (countNum == 1) {
 //        Console.Write("、".ToString().PadRight(2));
 //        Console.Write(num.ToString());
-//    }    
-//    if(countNum == 0) {
+//    }
+//    if (countNum == 0) {
 //        Console.Write(num.ToString());
 //        countNum = 1;
 //    }
@@ -57,9 +58,11 @@ int[] arrNum;
 /* 
  * 習題 5-2：寫一程式，將 10 個數字，讀入 A 陣列，對每一個數字，令 A[i] = A[i] + i。
  */
-//Console.WriteLine("此程式，可計算陣列之元素與其所在的位置之索引值之和，並將其結果，再次指派給相同索引值之位置。");
+//Console.WriteLine("此程式，可計算陣列之元素值與其所在的位置之索引值之和，並將其結果，再次指派給相同索引值之位置。");
 //Console.WriteLine("請輸入 10 個整數");
 //Console.WriteLine("-----");
+//Console.WriteLine();
+//Console.WriteLine();
 //int N = 10;
 //arrNum = new int[N];
 //int count = 0;
@@ -94,11 +97,15 @@ int[] arrNum;
  * 習題 5-3：寫一程式，將 10 個數字，讀入 A 陣列，並建立一個 B 陣列，如 A[i] >= 0，令 B[i] = 1，否則令 B[i] = 0。
  */
 //Console.WriteLine("此程式，可判斷 A 陣列的某索引，其值是否大於或等於零，並根據其是否大於或等於零，對 B 陣列相同之索引，指派相應之元素值。");
+//Console.WriteLine();
 //Console.WriteLine("若 A 陣列的某索引值之元素值大於或等於零，則 B 陣列相同索引之元素，其值為 1，否則為 0。");
+//Console.WriteLine();
 //Console.WriteLine("A 陣列與 B 陣列，各自可儲存 10 個整數值。");
 //Console.WriteLine("-----");
 //Console.WriteLine("請輸入 10 個整數");
 //Console.WriteLine("-----");
+//Console.WriteLine();
+//Console.WriteLine();
 //int N = 10;
 //int[] arrNumA = new int[N];
 //int[] arrNumB = new int[N];
@@ -142,10 +149,13 @@ int[] arrNum;
 //int row = 3;
 //int[,] arrNum2D = new int[row, column];
 //Console.WriteLine("此程式，可對某二維陣列的列和行，分別計算其同列之總和及同行之總和。");
+//Console.WriteLine();
 //Console.WriteLine("此二維陣列，可儲存 15 個整數值。");
 //Console.WriteLine("-----");
 //Console.WriteLine("請輸入 15 個整數");
 //Console.WriteLine("-----");
+//Console.WriteLine();
+//Console.WriteLine();
 //int N = 15;
 //int rowloop = 0;
 //int columnloop = 0;
@@ -172,10 +182,10 @@ int[] arrNum;
 //for (int i = 0; i < row; i++) {
 //    sumRowPre = sumRow;
 //    for (int j = 0; j < column; j++) {
-//        sumRow += arrNum2D[i, j];        
+//        sumRow += arrNum2D[i, j];
 //    }
 //    sumRow -= sumRowPre;
-//    Console.WriteLine($"第 {i + 1} 列的總和為：{sumRow}");   
+//    Console.WriteLine($"第 {i + 1} 列的總和為：{sumRow}");
 //}
 //int sumColumn = 0;
 //int sumColumnPre = 0;
@@ -198,10 +208,13 @@ int[] arrNum;
 //int row = 3;
 //int[,] arrNum2D = new int[row, column];
 //Console.WriteLine("此程式，可求某二維陣列的列和行之最小值。");
+//Console.WriteLine();
 //Console.WriteLine("此二維陣列，可儲存 15 個整數值。");
 //Console.WriteLine("-----");
 //Console.WriteLine("請輸入 15 個整數");
 //Console.WriteLine("-----");
+//Console.WriteLine();
+//Console.WriteLine();
 //int N = 15;
 //int rowloop = 0;
 //int columnloop = 0;
@@ -224,12 +237,12 @@ int[] arrNum;
 //}
 //Console.WriteLine();
 //int minRow = 0;
-//for (int i = 0; i < row; i++) {    
+//for (int i = 0; i < row; i++) {
 //    for (int j = 0; j < column; j++) {
 //        if (j == 0) {
 //            minRow = arrNum2D[i, j];
-//        }        
-//        if(arrNum2D[i, j] < minRow) {
+//        }
+//        if (arrNum2D[i, j] < minRow) {
 //            minRow = arrNum2D[i, j];
 //        }
 //    }
@@ -255,10 +268,13 @@ int[] arrNum;
  * 習題 5-6：寫一程式，輸入兩組數字：a1, a2, ..., a5 和 b1, b2, ..., b5。求 ai + bi, i = 1 到 i = 5。
  */
 //Console.WriteLine("此程式，可將兩組陣列，相同索引之元素值相加，而後得解。");
+//Console.WriteLine();
 //Console.WriteLine("兩組陣列，各自可儲存 5 個整數值。");
 //Console.WriteLine("-----");
 //Console.WriteLine("請輸入 5 個整數");
 //Console.WriteLine("-----");
+//Console.WriteLine();
+//Console.WriteLine();
 //int N = 5;
 //int count = 0;
 //int NA = N;
@@ -285,7 +301,7 @@ int[] arrNum;
 //    countB++;
 //    NB--;
 //}
-//for (int i = 0; i < N; i++) {    
+//for (int i = 0; i < N; i++) {
 //    Console.WriteLine("兩陣列之索引 {0} 的和：{1}", i, (arrNumA[i] + arrNumB[i]));
 //}
 //Console.WriteLine();
@@ -294,6 +310,7 @@ int[] arrNum;
  * 習題 5-7：寫一程式，輸入兩組數字：a1, a2, ..., a5 和 b1, b2, ..., b5。令 x 為 a 中的最大值，令 y 為 b 中的最大值，求 x 與 y 中，較小者。
  */
 Console.WriteLine("此程式，可得兩組陣列中，各自最大的元素值，並且相比較，而後求得二者之中的較小者。");
+Console.WriteLine();
 Console.WriteLine("兩組陣列，各自可儲存 5 個整數值。");
 Console.WriteLine("-----");
 Console.WriteLine("請輸入 5 個整數");
@@ -334,12 +351,12 @@ while (NB > 0) {
 }
 int maxNumA = 0;
 for (int i = 0; i < arrNumA.Length; i++) {
-        if (i == 0) {
+    if (i == 0) {
         maxNumA = arrNumA[i];
-        }
-        if (arrNumA[i] > maxNumA) {
+    }
+    if (arrNumA[i] > maxNumA) {
         maxNumA = arrNumA[i];
-        }
+    }
 }
 int maxNumB = 0;
 for (int i = 0; i < arrNumB.Length; i++) {
@@ -356,7 +373,7 @@ if (maxNumA == maxNumB) {
     Console.WriteLine("兩陣列的最大值，一樣大。值為：{0}", maxNum);
     return;
 }
-if(maxNumA < maxNumB) {
+if (maxNumA < maxNumB) {
     Console.WriteLine("兩陣列的最大值相比較後，A 陣列的較小，值為：{0}", maxNumA);
 } else {
     Console.WriteLine("兩陣列的最大值相比較後，B 陣列的較小，值為：{0}", maxNumB);
